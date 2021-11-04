@@ -1,0 +1,40 @@
+Warning [A2016]: Unencoded name=value entry found in passfile /apps/config/imqAdmin.pwd. Please run 'imqusermgr encode' before use the passfile. Support of passfile that has unencoded name=value entries will be removed in a future release.
+
+Listing all the destinations on the broker specified by:
+
+-------------------------
+Host         Primary Port
+-------------------------
+localhost    27693
+
+------------------------------------------------------------------------------------------------------------------------------
+               Name                 Type    State      Producers        Consumers                       Msgs
+                                                    Total  Wildcard  Total  Wildcard  Count  Remote  UnAck  InDelay  Avg Size
+------------------------------------------------------------------------------------------------------------------------------
+ADMIN_RP_admin_fe_instance1_2.0.1   Queue  RUNNING  0      -         1      -         0      0       0      0        0.0
+ADMIN_RP_admin_fe_instance2_2.0.1   Queue  RUNNING  0      -         3      -         0      0       0      0        0.0
+ADMIN_RQ_2.0.1                      Queue  RUNNING  0      -         5      -         0      0       0      0        0.0
+CC_BROADCAST_2.0.1                  Topic  RUNNING  0      0         2      0         0      0       0      0        0.0
+CC_RP_cc_fe_instance1_2.0.1         Queue  RUNNING  0      -         4      -         0      0       0      0        0.0
+CC_RP_cc_fe_instance2_2.0.1         Queue  RUNNING  0      -         4      -         0      0       0      0        0.0
+CC_RQ_2.0.1                         Queue  RUNNING  0      -         4      -         0      0       0      0        0.0
+GW_BROADCAST_2.0.1                  Topic  RUNNING  0      0         2      0         0      0       0      0        0.0
+GW_RP_V1_cif_fe_instance1_2.0.1     Queue  RUNNING  0      -         4      -         0      0       0      0        0.0
+GW_RP_V1_cif_fe_instance2_2.0.1     Queue  RUNNING  0      -         4      -         0      0       0      0        0.0
+GW_RQ_2.0.1                         Queue  RUNNING  0      -         71      -         0      0       0      0        0.0
+NB_BROADCAST_2.0.1                  Topic  RUNNING  0      0         2      0         0      0       0      0        0.0
+NB_RP_netbankar_fe_instance1_2.0.1  Queue  RUNNING  0      -         4      -         0      0       0      0        0.0
+NB_RP_netbankar_fe_instance2_2.0.1  Queue  RUNNING  0      -         4      -         0      0       0      0        0.0
+NB_RQ_2.0.1                         Queue  RUNNING  0      -         8      -         0      0       0      0        0.0
+PA_RP_adminsrvc_be_instance2_2.0.1  Queue  RUNNING  0      -         0      -         1      0       0      0        550.0
+PA_RP_cif_fe_instance1_2.0.1        Queue  RUNNING  0      -         0      -         18     0       0      0        621.3333
+PA_RP_cif_fe_instance2_2.0.1        Queue  RUNNING  0      -         0      -         31     0       0      0        3873.7742
+PA_RQ_2.0.1                         Queue  RUNNING  0      -         3      -         0      0       0      0        0.0
+QM_BROADCAST_2.0.1                  Topic  RUNNING  0      0         2      0         0      0       0      0        0.0
+QM_RP_qman_fe_instance1_2.0.1       Queue  RUNNING  0      -         3      -         0      0       0      0        0.0
+QM_RP_qman_fe_instance2_2.0.1       Queue  RUNNING  0      -         3      -         0      0       0      0        0.0
+QM_RQ_2.0.1                         Queue  RUNNING  0      -         3      -         0      0       0      0        0.0
+mq.sys.dmq                          Queue  RUNNING  0      -         0      -         772    0       0      0        13043.041
+testProducerQueueNameCif            Queue  RUNNING  0      -         0      -         18     0       0      0        476.0
+
+Successfully listed destinations.
