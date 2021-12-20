@@ -14,5 +14,6 @@
 #      cat input-table-gw-rw-over70 | awk '/RUNNING/ && $6>70 && /GW_RQ/ {print $1, $6} '
 
 #use if and else if to combine the two
+#Added two if else with checks of too less consumer on particular topics
 
-cat input-table-one-with51-gw-rw-69 | awk '{if(/RUNNING/ && !/GW_RQ/ && $6>50) print $1, $6; else if(/RUNNING/ && /GW_RQ/ && $6>70) print $1, $6;} '
+cat input-table-one-with51-gw-rw-69 | awk '{if(/RUNNING/ && !/GW_RQ/ && $6>50) print $1, $6; else if(/RUNNING/ && /GW_RQ/ && $6>70) print $1, $6;else if(/RUNNING/ && /cif/ && $6<1) print $1, $6;else if(/RUNNING/ && /NB/ && $6<1) print $1, $6;} '
